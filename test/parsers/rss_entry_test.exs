@@ -9,7 +9,7 @@ defmodule Feedjira.Parser.RSS.EntryTest do
   end
 
   test "parsing the title", %{entry: entry} do
-    assert entry.title == "Nokogiri’s Slop Feature"
+    assert entry.title == "Nokogiri&#8217;s Slop Feature"
   end
 
   test "parsing the url", %{entry: entry} do

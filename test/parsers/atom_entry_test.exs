@@ -11,7 +11,7 @@ defmodule Feedraptor.Parser.AtomEntryTest do
   end
 
   test "should parse the title", %{entry: entry} do
-    assert entry.title == "AWS Job: Architect & Designer Position in Turkey"
+    assert entry.title == "AWS Job: Architect &amp; Designer Position in Turkey"
   end
 
   test "should parse the url", %{entry: entry} do

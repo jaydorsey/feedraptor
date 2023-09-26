@@ -4,8 +4,8 @@ defmodule Feedraptor.MixProject do
   def project do
     [
       app: :feedraptor,
-      version: "0.3.0",
-      elixir: "~> 1.6",
+      version: "0.4.0",
+      elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env),
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -27,7 +27,7 @@ defmodule Feedraptor.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:capuli, "~> 0.3.0"},
+      {:capuli, "~> 0.4.0", git: "git@github.com:jaydorsey/capuli.git", branch: "jay/elixir-1.7"},
       {:timex, ">= 3.0.0"}
     ]
   end
